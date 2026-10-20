@@ -254,6 +254,8 @@ void showSelectionDetails() {
     }
     const auto id = selectedId();
     if (id.empty()) {
+        setDetails(L"Select a row to see its details.\r\n\r\n"
+                   L"All records and actions in this demonstrator are local sample data.");
         updateActions();
         return;
     }
