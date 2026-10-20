@@ -1,6 +1,6 @@
 ---
 name: brainstorm-idea
-description: 'Brainstorm an idea in msftjonw-labs/copilot-labs. Use when the user says Brainstrom an idea with me or Brainstorm an idea with me anywhere in a request. Collect a root-level folder name before creating idea files on the assigned branch.'
+description: 'Brainstorm an idea in msftjonw-labs/copilot-labs. Use when the user says Brainstrom an idea with me or Brainstorm an idea with me anywhere in a request. Collect a root-level folder name before creating idea files.'
 ---
 
 # Brainstorm an idea
@@ -11,12 +11,14 @@ Confirm that the task targets `msftjonw-labs/copilot-labs`. If not, stop and
 direct the user to start a task there.
 
 Read the current request and relevant conversation for an explicitly supplied
-root-level folder name. If missing, ask for it before creating idea files.
+folder name. Ask for the missing input:
+
+- Root-level folder name.
 
 Do not choose the folder name on the user's behalf. If interactive questions
 are not available, ask in the supported response/comment surface and end the
-run without creating the project folder. Resume after the user supplies it.
-Use the assigned branch without requesting a preferred branch name.
+run without creating the project folder. Resume after the user supplies the
+name.
 
 ## 2. Validate the folder
 
@@ -29,7 +31,7 @@ Use the assigned branch without requesting a preferred branch name.
   case-insensitive collision), explain the issue and request a different name.
   Do not overwrite, merge into, or delete an existing directory.
 
-Do not create the idea folder until a valid folder name is supplied.
+Do not create the idea folder until a valid name is supplied.
 
 ## 3. Persist the brainstorming space
 
@@ -49,13 +51,13 @@ details were supplied, leave those details explicitly open and invite the
 user to describe the idea. Do not scaffold an application, add dependencies,
 or implement a solution unless separately requested.
 
-Use the platform's normal change-persistence flow on the authorized branch.
+Use the platform's normal change-persistence flow.
 Do not claim that a commit, push, or PR exists unless the platform confirms it.
 Do not create a PR solely because brainstorming was requested.
 
 ## 4. Continue the conversation
 
-Report the created folder, assigned branch, and persistence status.
+Report the created folder and persistence status.
 
 Ask a small number of focused questions about the idea. As the user answers,
 update the idea document with confirmed decisions and keep unresolved
