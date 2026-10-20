@@ -13,8 +13,8 @@ and trailing punctuation or ellipses:
 
 - `Brainstrom an idea with me` or `Brainstorm an idea with me`: read and follow
   [the brainstorm workflow](skills/brainstorm-idea/SKILL.md). Before creating
-  the folder or project files, request both the root-level folder name and
-  preferred branch name, unless already supplied.
+  the folder or project files, request the root-level folder name unless already
+  supplied.
 - `I cannot see the testing result visually`: read and follow
   [the text test reporting workflow](skills/text-test-results/SKILL.md).
   Make visual test feedback understandable without viewing an image.
@@ -34,9 +34,5 @@ applies; text reporting can summarize existing evidence while waiting.
   alive waiting for an answer; continue when the user replies through the
   supported interface.
 - Do not invent answers or treat no response as approval.
-- Respect cloud agent's assigned branch and repository permissions. Requesting
-  a branch name does not grant permission or capability to create, switch,
-  rename, or push to that branch. Explain mismatches and request a decision
-  using the brainstorm workflow.
 - Preserve existing repository guidance and unrelated work.
 - Report blocked or unperformed actions explicitly; never describe them as done.
